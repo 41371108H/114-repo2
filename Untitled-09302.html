@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>蔡逸安 Tsai Yi-An - 個人網站</title>
+  <style>
+    body {
+      font-family: "Microsoft JhengHei", sans-serif;
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+      background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+      color: #333;
+    }
+
+    /* ===== 側邊導航列 ===== */
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 200px;
+      background: linear-gradient(180deg, #4a90e2, #50c9ce);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 30px;
+    }
+    nav img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      border: 3px solid white;
+      margin-bottom: 15px;
+      object-fit: cover;
+    }
+    nav h1 {
+      font-size: 18px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 10px 0;
+      font-weight: bold;
+      transition: transform 0.2s, color 0.2s;
+    }
+    nav a:hover {
+      color: #ffe082;
+      transform: scale(1.1);
+    }
+
+    /* ===== 主內容 ===== */
+    main {
+      margin-left: 200px;
+      padding: 30px;
+    }
+    section {
+      max-width: 900px;
+      margin: 60px auto;
+      padding: 30px;
+      border-radius: 12px;
+      background: white;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    section:hover {
+      transform: translateY(-5px);
+    }
+    h2 {
+      border-left: 6px solid #4a90e2;
+      padding-left: 12px;
+      color: #4a90e2;
+      margin-bottom: 15px;
+    }
+    ul {
+      padding-left: 20px;
+      line-height: 1.8;
+    }
+    a {
+      color: #4a90e2;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* ===== 首頁專用 ===== */
+    #about {
+      text-align: center;
+    }
+    #typing {
+      font-size: 22px;
+      color: #4a90e2;
+      font-weight: bold;
+      border-right: 3px solid #4a90e2;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 0;
+      animation: typing 3s steps(30, end) forwards, blink 0.7s step-end infinite;
+      margin-top: 15px;
+    }
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+    @keyframes blink {
+      50% { border-color: transparent }
+    }
+
+    /* ===== 頁尾 ===== */
+    footer {
+      text-align: center;
+      margin-top: 50px;
+      padding: 20px;
+      font-size: 14px;
+      color: #666;
+    }
+
+    /* ===== 響應式設計 ===== */
+    @media (max-width: 768px) {
+      nav {
+        position: relative;
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 10px;
+      }
+      nav img, nav h1 {
+        display: none;
+      }
+      main {
+        margin-left: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 側邊導覽列 -->
+  <nav>
+    <img src="photo.jpg" alt="蔡逸安 Tsai Yi-An">
+    <h1>蔡逸安</h1>
+    <a href="#about">關於我</a>
+    <a href="#education">學歷</a>
+    <a href="#work">工作經歷</a>
+    <a href="#experience">其他經歷</a>
+    <a href="#contact">聯絡我</a>
+  </nav>
+
+  <!-- 主內容 -->
+  <main>
+    <section id="about">
+      <h2>關於我</h2>
+      <p>你好！我是 <strong>蔡逸安 Tsai Yi-An</strong>，目前就讀於 <strong>國立台灣師範大學科技系學科組二年級</strong>。</p>
+      <p id="typing">熱愛教育、科技與服務的新世代青年</p>
+    </section>
+
+    <section id="education">
+      <h2>學歷</h2>
+      <p>政大實小 → 崇光女中 → 中崙高中 → 國立台灣師範大學</p>
+    </section>
+
+    <section id="work">
+      <h2>工作經歷</h2>
+      <ul>
+        <li>擔任國二學生英語科家教</li>
+      </ul>
+    </section>
+
+    <section id="experience">
+      <h2>其他經歷</h2>
+      <ul>
+        <li>中崙高中羽球社公關長</li>
+        <li>台師大國際青年服務隊成員</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>聯絡我</h2>
+      <p>Email: <a href="mailto:41371108H@gapps.ntnu.edu.tw">41371108H@gapps.ntnu.edu.tw</a></p>
+      <p>GitHub: <a href="https://github.com/41371108H" target="_blank">github.com/41371108H</a></p>
+    </section>
+
+    <footer>
+      © 2025 蔡逸安 Tsai Yi-An. All Rights Reserved.
+    </footer>
+  </main>
+
+</body>
+</html>
